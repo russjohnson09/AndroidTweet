@@ -3,15 +3,11 @@ package com.example.androidtweet;
 import java.util.ArrayList;
 
 import twitter4j.Status;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
-import android.widget.GridView;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class TweetAdapter extends ArrayAdapter<Status> {

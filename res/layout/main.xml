@@ -16,10 +16,10 @@
         android:id="@+id/main_screenname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/profile_image"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/profile_image"
-        android:text="Error" 
-                android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:text="Error"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/main_name"
@@ -47,8 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/message"
         android:layout_centerHorizontal="true"
-        android:text="Send Tweet" 
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        android:text="Send Tweet" />
 
     <Button
         android:id="@+id/view_tweets"
@@ -56,8 +56,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/send"
         android:layout_centerHorizontal="true"
-        android:text="View Tweets" 
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        android:text="View Tweets" />
 
     <Button
         android:id="@+id/view_followers"
@@ -65,8 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/view_tweets"
         android:layout_centerHorizontal="true"
-        android:text="View Followers"
-        android:onClick="onClick" />
+        android:onClick="onClick"
+        android:text="View Followers" />
 
     <Button
         android:id="@+id/view_following"
@@ -74,8 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/view_followers"
         android:layout_centerHorizontal="true"
-        android:text="View Following"
-        android:onClick="onClick" />
+        android:onClick="onClick"
+        android:text="View Following" />
 
     <Button
         android:id="@+id/view_profile"
@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/view_following"
         android:layout_centerHorizontal="true"
-        android:text="View My Profile" 
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        android:text="View My Profile" />
 
 </RelativeLayout>

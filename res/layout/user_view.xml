@@ -24,8 +24,8 @@
         android:id="@+id/user_profilename"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/user_name"
         android:layout_below="@+id/user_name"
+        android:layout_centerHorizontal="true"
         android:text="Profile Name"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 

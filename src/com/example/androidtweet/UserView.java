@@ -29,7 +29,6 @@ public class UserView extends Activity {
 
 	Bundle extras = getIntent().getExtras();
 
-	u = null;
 	if (extras != null) {
 	    try {
 		u = t.showUser(extras.getLong("userid"));

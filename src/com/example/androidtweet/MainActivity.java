@@ -5,17 +5,12 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.example.androidtweet.R.id;
-
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.User;
 import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
-import android.net.Uri;
-import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -24,20 +19,18 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-
-import android.view.GestureDetector;
-import android.view.GestureDetector.SimpleOnGestureListener;
-import android.view.LayoutInflater;
+import android.net.Uri;
+import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnTouchListener;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.androidtweet.R.id;
 
 public class MainActivity extends Activity implements OnClickListener {
 
@@ -213,6 +206,14 @@ public class MainActivity extends Activity implements OnClickListener {
 	    break;
 	case R.id.view_followers:
 	    startActivity(new Intent(this, ViewFollowers.class));
+	    break;
+	case R.id.view_following:
+	    startActivity(new Intent(this, ViewFollowing.class));
+	    break;
+	case R.id.view_profile:
+	    Intent i = new Intent(this, UserView.class);
+	    i.putExtra("userid", user.getId());
+	    startActivity(i);
 	    break;
 
 	}

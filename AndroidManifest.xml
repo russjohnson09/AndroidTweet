@@ -27,6 +27,7 @@
         <activity android:name=".ViewTweets" />
         <activity android:name=".TweetView" />
         <activity android:name=".ViewFollowers" />
+        <activity android:name=".ViewFollowing" />
         <activity android:name=".UserView" />
     </application>
 

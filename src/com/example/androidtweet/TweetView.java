@@ -4,7 +4,6 @@ import twitter4j.Status;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import android.app.Activity;
-import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 

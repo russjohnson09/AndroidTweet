@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 
-public class ViewFollowers extends ListActivity {
+public class ViewFollowing extends ListActivity {
 
     private Twitter t;
 
@@ -26,15 +26,15 @@ public class ViewFollowers extends ListActivity {
 
 	t = MainActivity.t;
 
-	ua = new UserAdapter(this, getFollowers());
+	ua = new UserAdapter(this, getFollowing());
 
 	setListAdapter(ua);
     }
 
-    private ArrayList<User> getFollowers() {
+    private ArrayList<User> getFollowing() {
 	ArrayList<User> users = new ArrayList<User>();
 	try {
-	    long[] list = t.getFollowersIDs(-1).getIDs();
+	    long[] list = t.getFriendsIDs(-1).getIDs();
 	    for (long l : list) {
 		users.add(t.showUser(l));
 	    }
