@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/main_screenname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profile_image"
+        android:layout_below="@+id/profile_image"
+        android:text="Error" 
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/main_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_screenname"
+        android:layout_centerHorizontal="true"
+        android:text="Error"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_name"
+        android:layout_centerHorizontal="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:layout_centerHorizontal="true"
+        android:text="Send Tweet" 
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/view_tweets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send"
+        android:layout_centerHorizontal="true"
+        android:text="View Tweets" 
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/view_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_tweets"
+        android:layout_centerHorizontal="true"
+        android:text="View Followers"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/view_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_followers"
+        android:layout_centerHorizontal="true"
+        android:text="View Following"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/view_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_following"
+        android:layout_centerHorizontal="true"
+        android:text="View My Profile" 
+        android:onClick="onClick"/>
+
+</RelativeLayout>
